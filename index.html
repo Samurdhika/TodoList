@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Stylish Todo List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <button id="colorBtn">Change Color</button>
-    <script src="script.js"></script>
+
+  <div class="app">
+    <h1>📝 Todo List</h1>
+
+    <div class="container">
+      <!-- LEFT -->
+      <div class="left">
+        <h2>Add New Item</h2>
+        <input type="text" id="todoInput" placeholder="What needs to be done?" />
+        <button id="addBtn">Add Item</button>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <h2>Your Todos</h2>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
